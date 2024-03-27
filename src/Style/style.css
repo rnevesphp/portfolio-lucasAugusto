@@ -23,7 +23,21 @@
     --cor-003: #3D196A;
     --cor-004: #FC1068;
     --cor-005: #fff;
-
 }
 
-/*  */
+/* tamaho do viewport */
+section {
+    height: 99.9vh;
+}
+
+
+/* fonte h1 titulos */
+.title-001 {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.info-principal , .imagem-principal{
+    height: 100%;
+}

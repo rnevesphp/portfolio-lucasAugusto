@@ -1,43 +1,192 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); 
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 /* ESTANDARES DE ESTILIZACAO */
 :root {
-    
-    /* fontes */
-    --font-poppins : 'Poppins' ; 
-    --font-roboto : 'Roboto'; 
-    --font-lato : 'Lato' ; 
+  /* fontes */
+  --font-poppins: "Poppins";
+  --font-roboto: "Roboto Condensed";
+  --font-lato: "Lato";
 
-    /* cores */
-    --cor-001: #FCAB10; 
-    --cor-002: #1F0441;
-    --cor-003: #3D196A;
-    --cor-004: #FC1068;
-    --cor-005: #fff;
+  /* cores */
+  --cor-001: #fcab10;
+  --cor-002: #1f0441;
+  --cor-003: #3d196a;
+  --cor-004: #fc1068;
+  --cor-005: #fff;
+  --cor-006: #000;
 }
 
 /* tamaho do viewport */
 section {
-    height: 99.9vh;
+  height: 99.9vh;
 }
-
 
 /* fonte h1 titulos */
 .title-001 {
-    font-family: var(--font-poppins);
-    font-weight: 700;
-    font-size: 3rem;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 3rem;
 }
 
-.info-principal , .imagem-principal{
-    height: 100%;
+.title-002 {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.para-001 {
+    font-family: var(--font-lato);
+    font-size: 1.3em;
+    font-weight: 600;
+} 
+
+.span-001 {
+    font-size: 1.6rem;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+}
+/* =========================================================================== */
+/* secao preloader */
+.notLoaded {
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  margin: 0px;
+}
+
+.loaderImage {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  animation: loadSpinner 2.5s linear infinite;
+
+  background: linear-gradient(#3d196a, #3d196a) padding-box,
+    linear-gradient(to right, #fc1068, #3d196a) border-box;
+  border-radius: 50%;
+  border: 4px solid transparent;
+}
+
+#loader {
+  position: absolute;
+  background: #3d196a;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes loadSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================================== */
+/* secao inicial */
+.s-inicio {
+  background-color: var(--cor-001);
+}
+
+/* cor titulo da secao */
+.s-inicio h1 {
+  color: var(--cor-003);
+}
+
+/* cor descricao */
+.s-inicio span {
+  color: var(--cor-004);
+}
+
+/* cor de titulo secundario */
+.s-inicio h3 {
+  color: var(--cor-004);
+}
+
+.s-inicio p {
+    color: var(--cor-006);
+}
+
+/* altura dos bloques da secao */
+.info-principal,
+.imagem-principal {
+  height: 100%;
+}
+
+.btn-cta {
+  margin: 2rem 0 0 0;
+}
+
+.btn-cta .btn {
+  background-color: var(--cor-002);
+  font-family: var(--font-roboto);
+  font-weight: 500;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 6px;
+  transition: all 1.1s ease-out;
+}
+
+.btn-cta .btn:hover {
+  transition: all 1.1s ease-out;
+  background-color: var(--cor-002);
+  font-weight: 700;
+  font-family: var(--font-roboto);
+  box-shadow: 0px 0px 10px 4px var(--cor-004);
+}
+
+.para-001 .highlighter{
+    color: var(--cor-004);
+    border-bottom: .7px solid var(--cor-004);
+}
+
+.tech-icons {
+    margin: 3rem 0 0 0;
+    padding: 20px 0;
+
+    display: flex;
+}
+
+.icon-destacado {
+    margin: 0 2rem 0 0 ;
+}
+
+.icon-destacado a { 
+    background-color: var(--cor-002);
+    height: 3rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+}
+
+.icon-destacado a i { 
+    color: var(--cor-005) ;
+    font-size: 1.8rem
+}
+
+.glass {
+  padding: 40px 40px;
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.46);
 }

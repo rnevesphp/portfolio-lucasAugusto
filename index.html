@@ -27,45 +27,120 @@
 </head>
 
 <body>
-
-    <main>
-        <section class="s-inicio row green valign-wrapper">
-        <div class="col s12 valign-wrapper">
-            <div class="info-principal blue col s12 m6 l6 ">
-
-                <div class="titulo-principal  col s12 ">
-                    <h1 class="title-001 red">Olá, Eu sou Lucas Augusto :)</h1>
-                    <span class="span-001 green">
-                        Desenvolvedor Full Stack
-                    </span>
-                    <div class="btn-cta yellow">
-                        <button class=" btn ">Download CV</button>
-                    </div>
-                </div>
-
-                <div class="descricao-principal  col s12 ">
-                    <h3 class="title-002">Sobre Mim</h3>
-                    <p class="para-001">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta velit cumque ullam eum numquam ex voluptates culpa. Quibusdam deserunt saepe hic repellendus repellat, eveniet, quos harum pariatur, sapiente impedit eaque.
-                    </p>
-                </div>
-                
-            </div>
-
-            <div class="imagem-principal red col s12 m6 l6">
-
-                <div class="img-floating center">
-                    <img src="./src/assets/img/img-home-page.png" alt="" class="responsive-img">
-                </div>
-
-            </div>
+    <main class="notLoaded">
+        <div id="loader">
+            <div class="loaderImage" src=""></div>
         </div>
-             
+
+
+        <section class="s-inicio row valign-wrapper">
+            <div class="col s12 valign-wrapper">
+                <div class="info-principal  col s12 m6 l6 ">
+
+                    <div class="titulo-principal col s12 ">
+                        <h1 class="title-001">Olá, Eu sou <br> Lucas Augusto :)</h1>
+                        <span class="span-001">
+                            Desenvolvedor Full Stack
+                        </span>
+                        <div class="btn-cta valign-wrapper">
+                            <button class=" btn ">Download CV</button>
+                        </div>
+                    </div>
+
+                    <div class="descricao-principal  col s12 ">
+                        <h3 class="title-002">Sobre Mim</h3>
+                        <p class="para-001">
+                            Com meus 33 anos e diretamente de Simões, Piauí. Formado em <span class="highlighter">
+                                Ciência da Computação</span>, com algumas especializações em <span
+                                class="highlighter">Indústria 4.0 </span> e <span class="highlighter">Docência do Ensino
+                                Superior</span> . Atualmente, estou cursando <span class="highlighter">Full Stack - Java
+                                na EBAC</span> e recentemente fiz parte do programa <span class="highlighter">1000
+                                DEVS</span>, impartido pela <span class="highlighter">mesttra</span> apoiado pela <span
+                                class="highlighter">Johnson & Johnson e Hospital Albert Einstein</span> . Tenho
+                            experiência como docente no <span class="highlighter">SENAI, instrutor de tecnologia no
+                                SENAC</span> e atualmente estou lecionando <span class="highlighter">Informática na
+                                ETE</span> . Também trabalhei como <span class="highlighter">Analista de Suporte na
+                                ASUR-Informática</span> e <span class="highlighter">técnico de urna na Probank</span>.
+                            Atualmente, sou <span class="highlighter">estagiário na HL</span> , atuando como <span
+                                class="highlighter">programador .NET</span> . Estou sempre em busca de novas
+                            oportunidades emocionantes e adoro conectar-me com pessoas!
+                        </p>
+                        <div class="tech-icons hide-on-med-and-down ">
+                            <div class="icon-destacado ">
+                                <a target="_blank" href="https://www.youtube.com/@lucasaugusto3297/videos">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+
+                            <div class="icon-destacado">
+                                <a target="_blank" href="https://www.instagram.com/lucasaugust0_jj/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                            <div class="icon-destacado">
+                                <a target="_blank" href="https://www.facebook.com/lucas11102003">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </div>
+                            <div class="icon-destacado">
+                                <a target="_blank" href="https://www.linkedin.com/in/lucas-augusto-4b536962/">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                            <div class="icon-destacado">
+                                <a target="_blank" href="https://github.com/Lucassilva1010">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="icon-destacado">
+                                <a target="_blank"
+                                    href="https://wa.me/5589981344562?text=Olá%20Lucas%20muito%20prazer!%20Venho%20através%20do%20seu%20portfólio!">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="icon-destacado">
+                                <a target="_blank"
+                                    href="mailto:lucasaugusto.simoes@gmail.com?c?body:Olá Lucas muito praz! Venho através do seu portfólio!">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="imagem-principal col s12 m6 l6 hide-on-small-only">
+
+
+
+                    <div class="img-floating  center">
+                        <img src="./src/assets/img/img-home-page.png" alt="" class="responsive-img">
+                    </div>
+
+                </div>
+            </div>
+
 
         </section>
     </main>
 
 </body>
 <script src="./src/js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(document).ready(function () {
+        window.setTimeout('fadeout();', 1000);
+
+    });
+
+    function fadeout() {
+        $('#loader').delay(1000).fadeOut('slow', function () {
+            $('.notLoaded').removeClass('notLoaded');
+        });
+    }
+</script>
 
 </html>

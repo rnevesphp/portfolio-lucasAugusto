@@ -26,7 +26,7 @@
 
 /* tamaho do viewport */
 section {
-  height: 99.9vh;
+  height: 100vh;
 }
 
 /* fonte h1 titulos */
@@ -43,22 +43,22 @@ section {
 }
 
 .para-001 {
-    font-family: var(--font-lato);
-    font-size: 1.3em;
-    font-weight: 600;
-} 
+  font-family: var(--font-lato);
+  font-size: 1.3em;
+  font-weight: 600;
+}
 
 .span-001 {
-    font-size: 1.6rem;
-    font-family: var(--font-roboto);
-    font-weight: 500;
+  font-size: 1.6rem;
+  font-family: var(--font-roboto);
+  font-weight: 500;
 }
 /* =========================================================================== */
 /* secao preloader */
 .notLoaded {
   height: 100vh;
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   margin: 0px;
 }
 
@@ -76,7 +76,7 @@ section {
 }
 
 #loader {
-  position: absolute;
+  position: fixed;
   background: #3d196a;
   width: 100%;
   height: 100vh;
@@ -119,13 +119,7 @@ section {
 }
 
 .s-inicio p {
-    color: var(--cor-006);
-}
-
-/* altura dos bloques da secao */
-.info-principal,
-.imagem-principal {
-  height: 100%;
+  color: var(--cor-006);
 }
 
 .btn-cta {
@@ -150,39 +144,37 @@ section {
   box-shadow: 0px 0px 10px 4px var(--cor-004);
 }
 
-.para-001 .highlighter{
-    color: var(--cor-004);
-    border-bottom: .7px solid var(--cor-004);
+.para-001 .highlighter {
+  color: var(--cor-004);
+  border-bottom: 0.7px solid var(--cor-004);
 }
 
 .tech-icons {
-    margin: 3rem 0 0 0;
-    padding: 20px 0;
-
-    display: flex;
+  margin: 3rem 0 0 0;
+  padding: 20px 0;
+  display: flex;
 }
 
 .icon-destacado {
-    margin: 0 2rem 0 0 ;
+  margin: 0 2rem 0 0;
 }
 
-.icon-destacado a { 
-    background-color: var(--cor-002);
-    height: 3rem;
-    width: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 9px;
+.icon-destacado a {
+  background-color: var(--cor-002);
+  height: 3rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
 }
 
-.icon-destacado a i { 
-    color: var(--cor-005) ;
-    font-size: 1.8rem
+.icon-destacado a i {
+  color: var(--cor-005);
+  font-size: 1.8rem;
 }
 
 .glass {
-  padding: 40px 40px;
   background: rgba(255, 255, 255, 0.32);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -190,3 +182,162 @@ section {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.46);
 }
+
+.img-floating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-floating img {
+  animation: float 7s ease-in-out infinite;
+}
+
+/* tamano icone */
+div.icon-floating.html img {
+  width: 90px;
+  height: 90px;
+}
+
+/* position da div que contem o icone */
+.df-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-absolute { 
+  position: absolute;
+  width: 110px;
+  height: 110px;
+}
+
+.size-img { 
+  width: 90px;
+  height: 90px;
+  border-radius: 7px;
+}
+
+div.icon-floating.html {
+  bottom: 70%;
+  left: 80%;
+  animation: float 6s ease-in-out infinite;
+}
+
+div.icon-floating.js {
+  bottom: 67%;
+  left: 60%;
+  animation: float 5.7s ease-in-out infinite;
+}
+
+div.icon-floating.c-sharp {
+  bottom: 45%;
+  left: 62%;
+  animation: float 5.5s ease-in-out infinite;
+}
+
+div.icon-floating.figma {
+  bottom: 40%;
+  left: 77%;
+  animation: float 5.5s ease-in-out infinite;
+}
+
+div.icon-floating.css {
+  bottom: 65%;
+  left: 86%;
+  animation: float 4.7s ease-in-out infinite;
+}
+
+div.icon-floating.bootstrap {
+  bottom: 26%;
+  left: 67%;
+  animation: float 3.7s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+/* ====================BREAKPOINTS===================== */
+
+/* /* Breakpoint para telas ultrawide 
+@media screen and (min-width: 1900px) {
+  /* Define a largura máxima para telas ultrawide 
+}
+
+/* Breakpoint para desktops grandes 
+@media screen and (max-width: 1200px) {
+  /* Você pode ajustar os estilos para desktops grandes aqui, se necessário 
+}
+
+/* Breakpoint para desktops pequenos 
+@media screen and (max-width: 991px) {
+  /* Você pode ajustar os estilos para desktops pequenos aqui, se necessário 
+}
+
+/* Breakpoint para tablets 
+@media screen and (max-width: 767px) {
+  /* Altera a largura máxima para ocupar toda a largura da tela 
+}
+ */
+
+/* Breakpoint para smartphones */
+
+/* @media screen and (max-width: 575px) {
+  /* Reduz o espaço ao redor do conteúdo para telas menores */
+/* fonte h1 titulos 
+
+  .title-001 {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  .title-002 {
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  .para-001 {
+    font-family: var(--font-lato);
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    text-align: justify;
+  }
+
+  .span-001 {
+    font-size: 1.6rem;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+  }
+
+  .tech-icons {
+    margin: 0 0 0 0 ;
+  }
+
+  .icon-destacado {
+    gap: 20px;
+  }
+
+  .icon-destacado a {
+    background-color: var(--cor-002);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+  }
+  
+  .icon-destacado a i {
+    color: var(--cor-005);
+    font-size: 1rem;
+  }
+
+} */

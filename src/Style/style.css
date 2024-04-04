@@ -27,6 +27,7 @@
 /* tamaho do viewport */
 section {
   height: 100vh;
+  padding: 0 40px;
 }
 
 /* fonte h1 titulos */
@@ -174,7 +175,13 @@ section {
   font-size: 1.8rem;
 }
 
-
+.info-principal { 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
 
 /* ===========animacoes============= */
 
@@ -186,11 +193,6 @@ section {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.46);
-}
-
-/* animacao imagem principal secao inicio */
-.img-floating img {
-  animation: float 7s ease-in-out infinite;
 }
 
 /* alinhamento do icone no centro da div */
@@ -242,6 +244,14 @@ div.icon-floating.css {
   animation: float 4.7s ease-in-out infinite;
 }
 
+/* animacao imagem principal secao inicio */
+.img-floating {
+  position: absolute; 
+  animation: float 7s ease-in-out infinite;
+  top: 25%;
+  left: 60%;
+}
+
 div.icon-floating.bootstrap {
   bottom: 26%;
   left: 67%;
@@ -282,10 +292,17 @@ div.icon-floating.bootstrap {
  */
 
 /* Breakpoint para smartphones */
-
 @media screen and (max-width: 575px) {
-  /* Reduz o espaço ao redor do conteúdo para telas menores */
+  /*Reduz o espaço ao redor do conteúdo para telas menores */
   /* fonte h1 titulos  */
+
+  .titulo-principal , .descricao-principal { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
 
   .title-001 {
     font-family: var(--font-poppins);
@@ -301,7 +318,6 @@ div.icon-floating.bootstrap {
     font-family: var(--font-lato);
     font-size: 1.1rem;
     font-weight: 600;
-
     text-align: justify;
   }
   .span-001 {
@@ -309,23 +325,32 @@ div.icon-floating.bootstrap {
     font-family: var(--font-roboto);
     font-weight: 500;
   }
+
+  .btn-cta { 
+    margin: 25px 0 0 0;
+  }
+
   .tech-icons {
     margin: 0 0 0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .icon-destacado {
-    gap: 20px;
+  .icon-destacado { 
+    margin: 0;
   }
+  
   .icon-destacado a {
     background-color: var(--cor-002);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 9px;
-
   }
 
   .icon-destacado a i {
     color: var(--cor-005);
     font-size: 1rem;
-  }
+  } 
 } 

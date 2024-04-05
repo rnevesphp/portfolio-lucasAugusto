@@ -83,9 +83,9 @@ section {
   height: 100vh;
   top: 0px;
   left: 0px;
-  display: flex;
+/*   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 @keyframes loadSpinner {
@@ -150,23 +150,15 @@ section {
   border-bottom: 0.7px solid var(--cor-004);
 }
 
-.tech-icons {
-  margin: 3rem 0 0 0;
-  padding: 20px 0;
-  display: flex;
-}
-
-.icon-destacado {
-  margin: 0 2rem 0 0;
-}
-
 .icon-destacado a {
   background-color: var(--cor-002);
-  height: 3rem;
-  width: 5rem;
+  height: 30px;
+  width: 50px;
+  margin: 10px 0 0 0;
+
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
   border-radius: 9px;
 }
 
@@ -300,7 +292,6 @@ div.icon-floating.bootstrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
   }
 
@@ -327,26 +318,25 @@ div.icon-floating.bootstrap {
   }
 
   .btn-cta { 
-    margin: 25px 0 0 0;
+    margin: 10px 0 0 0;
   }
 
   .tech-icons {
-    margin: 0 0 0 0 ;
+    margin: 20px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .icon-destacado { 
-    margin: 0;
-  }
-  
+
   .icon-destacado a {
     background-color: var(--cor-002);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 9px;
+    width: 90px;
+    border-radius: 5px;
+    margin: 10px 5px 10px 0 ;
   }
 
   .icon-destacado a i {

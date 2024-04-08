@@ -373,6 +373,7 @@ div.icon-floating.bootstrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 0 2rem 0;
   }
 
   .icon-destacado {

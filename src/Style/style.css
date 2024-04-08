@@ -370,17 +370,14 @@ div.icon-floating.bootstrap {
   }
 
   .tech-icons {
-    margin: 10px 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 95%;
   }
 
   .icon-destacado {
     padding: 0 !important;
     min-height: o !important;
-    margin: 2.5px 2.5px;
   }
 
   .icon-destacado a {
@@ -390,8 +387,8 @@ div.icon-floating.bootstrap {
     justify-content: center;
     width: auto;    
 
-    height: 30px;
-    width: 40px;
+    height: 35px;
+    width: 45px;
 
     border-radius: 5px;
   }

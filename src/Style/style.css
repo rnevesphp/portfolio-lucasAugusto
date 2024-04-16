@@ -30,6 +30,10 @@ section {
   padding: 0 40px;
 }
 
+main { 
+  background-color: var(--cor-001);
+}
+
 /* fonte h1 titulos */
 .title-001 {
   font-family: var(--font-poppins);
@@ -60,7 +64,7 @@ section {
   height: 100vh;
   overflow: hidden;
   position: absolute;
-  margin: 0px;
+  width: 0px;
 }
 
 .loaderImage {
@@ -79,7 +83,7 @@ section {
 #loader {
   position: fixed;
   background: #3d196a;
-  width: 100%;
+  width: 100% !important;
   height: 100vh;
   top: 0px;
   left: 0px;
@@ -99,8 +103,7 @@ section {
   }
 }
 
-/* =========================================================================== */
-/* secao inicial */
+/* ====================SECAO INICIO===================== */
 .s-inicio {
   background-color: var(--cor-001);
 }
@@ -265,6 +268,33 @@ div.icon-floating.bootstrap {
     transform: translateY(-50px);
   }
 }
+/* ====================SECAO INICIO===================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================SECAO CONHECIMENTOS===================== */
+.s-conhecimentos {
+  background-color: var(--cor-002);
+}
+
+.s-conhecimentos h1 {
+  padding: 2.5rem 0 0 0 ;
+  color: var(--cor-004);
+}
+
+
+
+
 
 /* ====================BREAKPOINTS===================== */
 
@@ -373,7 +403,7 @@ div.icon-floating.bootstrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 0 2.3rem 0;
+    /* padding: 0 0 2.3rem 0; */
   }
 
   .icon-destacado {
